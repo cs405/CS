@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>393</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AI辅助</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>分辨率</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>150</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>640x480</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>800x400</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>800x600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>960x540</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>960x600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1024x768</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1280x720</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1280x800</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1280x1024</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1440x900</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1600x1200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1680x1050</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1920x1080</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>1920x1200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2048x1536</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2560x1440</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>2560x1600</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>3840x2160</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>70</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>模型</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>70</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>选择模型</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>游戏</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>30</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CF</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>CSGO</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>GTA5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>APEX</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>110</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>识别区域</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>110</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>100x100</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>200x200</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>320x320</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>640x640</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>全屏</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_5">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>270</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>攻击部位</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_4">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>270</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>head</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>body</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_6">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>310</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>爆头率</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_5">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>310</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>10%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>20%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>30%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>40%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>50%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>60%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>70%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>80%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>90%</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>100%</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>350</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置完成</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_7">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>190</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>is_ghub</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_6">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>190</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>false</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>true</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_8">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>230</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>端口号</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_7">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>230</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>COM1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>COM10</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
